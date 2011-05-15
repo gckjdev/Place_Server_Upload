@@ -9,5 +9,5 @@ from place.photo.views import upload, get
 
 urlpatterns = patterns('',
     url(r'^upload/$', upload),
-    url(r'^get/$', get),
+    url(r'^get/(?P<post_id>\w+)/$', get),
 )
