@@ -1,8 +1,8 @@
 from django import forms
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
-from place.photo.models import Photo
-from place.photo.utils import __get_json_response
+from orange.django.place.models import Photo
+from orange.django.place.views import get_json_response
 
 def upload(request):
     if request.method == 'POST':
@@ -16,7 +16,7 @@ def upload(request):
 
 def get(request, post_id):
     photos = Photo.objects.all()
-    return __get_json_response(Photo, photos)
+    return get_json_response(Photo, photos)
 
 class PhotoForm(forms.ModelForm):
     class Meta:

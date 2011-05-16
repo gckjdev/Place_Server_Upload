@@ -3,6 +3,7 @@
 	<name>place-upload</name>
 	<comment></comment>
 	<projects>
+		<project>place-db</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
