@@ -2,7 +2,7 @@ from django import forms
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from orange.django.place.models import Photo
-from orange.django.place.views import get_json_response
+from orange.django.place.utils import get_json_response
 
 def upload(request):
     if request.method == 'POST':
