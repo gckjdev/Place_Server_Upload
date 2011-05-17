@@ -5,7 +5,7 @@ Created on 2011-4-12
 '''
 
 from django.conf.urls.defaults import patterns, url
-from place.photo.views import upload, get
+from cms.photo.views import upload, get
 
 urlpatterns = patterns('',
     url(r'^upload/$', upload),
