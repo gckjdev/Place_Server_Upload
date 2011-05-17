@@ -1,0 +1,23 @@
+WSGIPythonHome /usr/local/lib/py27-nosql
+
+Alias /media/ "/var/www/place/media"
+<Directory "/var/www/place/media">
+Order allow,deny
+Options Indexes
+Allow from all
+IndexOptions FancyIndexing
+</Directory>
+
+Alias /static/ "/var/www/place/static"
+<Directory "/var/www/place/static">
+Order allow,deny
+Options Indexes
+Allow from all
+IndexOptions FancyIndexing
+</Directory>
+
+WSGIScriptAlias /res/ "/var/python/django/place-upload/wsgi.py"
+
+<Directory "/var/python/django/place-upload">
+Allow from all
+</Directory>
