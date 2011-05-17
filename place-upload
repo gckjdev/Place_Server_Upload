@@ -15,7 +15,7 @@ IndexOptions FancyIndexing
 </Directory>
 
 WSGIPythonHome /usr/local/lib/py27-nosql
-WSGIScriptAlias /cms/ "/var/python/django/place-upload/wsgi.py"
+WSGIScriptAlias /cms/ "/var/python/django/place-upload/django.wsgi"
 
 <Directory "/var/python/django/place-upload">
 Allow from all
