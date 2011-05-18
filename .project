@@ -3,6 +3,7 @@
 	<name>place-upload</name>
 	<comment></comment>
 	<projects>
+		<project>django_cassandra_backend</project>
 		<project>place-db</project>
 	</projects>
 	<buildSpec>
